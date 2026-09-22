@@ -62,7 +62,7 @@ fig_genre.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_genre, use_container_width=True)
+st.plotly_chart(fig_genre, use_container_width=True, key="genre_donut_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -86,7 +86,7 @@ fig_treemap.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_treemap, use_container_width=True)
+st.plotly_chart(fig_treemap, use_container_width=True, key="genre_treemap_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -114,7 +114,7 @@ fig_hist.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_hist, use_container_width=True)
+st.plotly_chart(fig_hist, use_container_width=True, key="total_audi_histogram")
 
 # 가장 영화가 몰린 구간 계산
 counts, bin_edges = np.histogram(df["total_audi"].dropna(), bins=n_bins)
@@ -156,7 +156,7 @@ fig_scatter.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_scatter, use_container_width=True)
+st.plotly_chart(fig_scatter, use_container_width=True, key="scrn_vs_audi_scatter")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -226,7 +226,7 @@ fig_genre.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_genre, use_container_width=True)
+st.plotly_chart(fig_genre, use_container_width=True, key="genre_donut_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -250,7 +250,7 @@ fig_treemap.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_treemap, use_container_width=True)
+st.plotly_chart(fig_treemap, use_container_width=True, key="genre_treemap_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -278,7 +278,7 @@ fig_hist.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_hist, use_container_width=True)
+st.plotly_chart(fig_hist, use_container_width=True, key="total_audi_histogram")
 
 # 가장 영화가 몰린 구간 계산
 counts, bin_edges = np.histogram(df["total_audi"].dropna(), bins=n_bins)
@@ -320,7 +320,7 @@ fig_scatter.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_scatter, use_container_width=True)
+st.plotly_chart(fig_scatter, use_container_width=True, key="scrn_vs_audi_scatter")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -390,7 +390,7 @@ fig_genre.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_genre, use_container_width=True)
+st.plotly_chart(fig_genre, use_container_width=True, key="genre_donut_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -414,7 +414,7 @@ fig_treemap.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_treemap, use_container_width=True)
+st.plotly_chart(fig_treemap, use_container_width=True, key="genre_treemap_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -442,7 +442,7 @@ fig_hist.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_hist, use_container_width=True)
+st.plotly_chart(fig_hist, use_container_width=True, key="total_audi_histogram")
 
 # 가장 영화가 몰린 구간 계산
 counts, bin_edges = np.histogram(df["total_audi"].dropna(), bins=n_bins)
@@ -484,7 +484,7 @@ fig_scatter.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_scatter, use_container_width=True)
+st.plotly_chart(fig_scatter, use_container_width=True, key="scrn_vs_audi_scatter")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -554,7 +554,7 @@ fig_genre.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_genre, use_container_width=True)
+st.plotly_chart(fig_genre, use_container_width=True, key="genre_donut_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -578,7 +578,7 @@ fig_treemap.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_treemap, use_container_width=True)
+st.plotly_chart(fig_treemap, use_container_width=True, key="genre_treemap_chart")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
@@ -606,7 +606,7 @@ fig_hist.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_hist, use_container_width=True)
+st.plotly_chart(fig_hist, use_container_width=True, key="total_audi_histogram")
 
 # 가장 영화가 몰린 구간 계산
 counts, bin_edges = np.histogram(df["total_audi"].dropna(), bins=n_bins)
@@ -648,7 +648,7 @@ fig_scatter.update_layout(
     margin=dict(t=30, b=30, l=10, r=10),
 )
 
-st.plotly_chart(fig_scatter, use_container_width=True)
+st.plotly_chart(fig_scatter, use_container_width=True, key="scrn_vs_audi_scatter")
 
 st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
