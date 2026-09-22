@@ -67,3 +67,27 @@ st.markdown("**📌 이 그래프로 알 수 있는 것:**")
 st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
 
 st.divider()
+
+# ------------------------------------------------------------
+# 2. 장르 안 영화별 총 관객 - 트리맵
+# ------------------------------------------------------------
+st.header("2️⃣ 장르별 영화 총 관객 트리맵")
+
+fig_treemap = px.treemap(
+    df,
+    path=["genre", "movieNm"],
+    values="total_audi",
+)
+fig_treemap.update_traces(
+    hovertemplate="영화명: %{label}<br>총 관객: %{value:,}명<extra></extra>",
+)
+fig_treemap.update_layout(
+    margin=dict(t=30, b=30, l=10, r=10),
+)
+
+st.plotly_chart(fig_treemap, use_container_width=True)
+
+st.markdown("**📌 이 그래프로 알 수 있는 것:**")
+st.info("여기에 이 그래프로 알 수 있는 내용을 한 문장으로 적어 주세요.")
+
+st.divider()
